@@ -32,7 +32,7 @@ const renderGoodsItem = obj => {
     return `<div class="goods-item">
         <h3>${obj.title}</h3>
         <p>${obj.price}</p>
-        <img src="https://pixabay.com/get/g2b9c5fb0a9933a0eb1cf83900763a9119857588a44b49da5c4e6cd5dae008a02e1b6b53569a56b9ddc816780c31e86d7_640.jpg" alt=""><br>
+        <img src="https://image.freepik.com/free-photo/3d-clouds-and-hot-air-balloons_23-2148964570.jpg" alt="pic"><br>
         <button class="buy-btn">Купить</button>
         </div>`;
 };
