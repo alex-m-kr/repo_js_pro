@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Интернет-магазин</title>
+    <link rel="stylesheet" href="mystyle.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <div id="app">
+        <div class="top">
+            <div class="container top__box">
+                <ul class="header">
+                    <li><a href="index.html"><img src="img/logo.svg" alt="логотип"></a></li>
+                    <li><a href="contacts.html"><img src="img/contact.svg" alt="контакты"></a></li>
+                    <li>
+                        <div class="cart">
+                            <filter-el></filter-el>
+                            <cart ref="cart"></cart>
+                            <!-- <button class="btn-cart" type="button" @click="showCart = !showCart">Корзина</button>
+
+                            <cart :cart-items="cartItems" :img="imgCart" :visibility="showCart" @remove="remove"></cart>
+ -->
+
+                        </div>
+                    </li>
+
+
+                </ul>
+                <div class="top__info">
+                    <h1 class="head1">Интернет магазин</h1>
+                    <p class="text text_h1">В нашем магазине много хороших товаров...</p>
+                    <!-- <a href="#" class="top__button">See Our Project</a> -->
+
+                </div>
+            </div>
+        </div>
+
+        <div class="what-we-do container">
+            <h3 class="head3">Перечень товаров</h3>
+            <!-- <products :products="filtered" :img="imgProduct" @add-product="addProduct"></products> -->
+            <error ref="error"></error>
+            <products ref="products"></products>
+
+            <!-- <div class="card">
+
+            <div class="card_el">
+                <img src="img/card1.svg" class="card__img" alt="карточка 1">
+                <h4 class="head4">Make Your business To Be
+                    Better Famous In Internet</h4>
+                <p class="text">Второй параграф с произвольным текстом. Lorem ipsum dolor sit amet, consectetur
+                    adipisicing.
+                    Lorem ipsum dolor sit amet.
+                </p>
+                <a href="#" class="card__link">Learn more &#10132;</a>
+            </div>
+            <div class="card_el">
+                <img src="img/card2.svg" class="card__img" alt="карточка 1">
+                <h4 class="head4">Bring Technology To Your
+                    Comfrotable Home</h4>
+                <p class="text">Второй параграф с произвольным текстом. Lorem ipsum dolor sit amet, consectetur
+                    adipisicing.
+                    Lorem ipsum dolor sit amet.
+                </p>
+                <a href="#" class="card__link">Learn more &#10132;</a>
+            </div>
+            <div class="card_el">
+                <img src="img/card3.svg" class="card__img" alt="карточка 1">
+                <h4 class="head4">Build Your Digital Product
+                    That Suitable For Your Need</h4>
+                <p class="text">Второй параграф с произвольным текстом. Lorem ipsum dolor sit amet, consectetur
+                    adipisicing.
+                    Lorem ipsum dolor sit amet.
+                </p>
+                <a href="#" class="card__link">Learn more &#10132;</a>
+            </div>          
+
+
+        </div> -->
+        </div>
+
+        <!-- <div class="project container">
+        <h3 class="head3">Lorem, ipsum dolor.</h3>
+        <p class="text text_project">Третий параграф. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem
+            ipsum dolor sit amet consectetur adipisicing elit. Provident, id!</p>
+        <div class="project__item">
+            <img class="proj__img" src="img/proj1.png" alt="картинка 1">
+            <p class="proj__text">Smart Home Installation</p>
+        </div>
+        <div class="project__parent">
+            <div class="project__item project__item_margin">
+                <img class="proj__img" src="img/proj2.png" alt="картинка 2">
+                <p class="proj__text2">Sparklite App</p>
+            </div>
+            <div class="project__item">
+                <img class="proj__img" src="img/proj3.png" alt="картинка 3">
+                <p class="proj__text2">Car-Rapetition App</p>
+            </div>
+
+        </div>
+    </div> -->
+        <div class="footer">
+            <!-- <div class="container">
+            <div class="footer__top">
+                <div class="footer__text">
+                    <h3 class="head3 head3_footer">Intersted to woek
+                        with our team?</h3>
+                    <p class="text f_text">Строка 12 задания не более 10 слов. Lorem, ipsum. Lorem ipsum dolor sit.</p>
+                </div>
+                <a href="" class="footer__button">Let’s Talk</a>
+            </div>
+        </div> -->
+            <!-- <hr> -->
+            <div class="container">
+                <div class="footer-bottom">
+                    <ul class="footer__info f_text">
+                        <li class="footer__list">Контактные данные: Алексей</li>
+                        <li class="footer__list">тел. 11-11-11</li>
+                        <li class="footer__list">эл. почта email@emai.ru</li>
+                    </ul>
+                    <div class="footer__copy">
+                        <p class="text footer__copy">Все права защищены.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"
+        integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="js/ProductComponent.js"></script>
+    <script src="js/CartComponent.js"></script>
+    <script src="js/FilterComp.js"></script>
+    <script src="js/ErrorComp.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
