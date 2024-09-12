@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburger</title>
+
+    <!-- стилей немного, поэтому не стал их помещать в отдельный файл -->
+    <style>
+        .container {
+            display: flex;
+            width: 380px;
+        }
+
+        .choice_size, .choice_topping, .choice_stuff, .result {
+            height: 50px;
+            width: 150px;
+            border: 1px solid #000;            
+            box-sizing: border-box;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        .choice_stuff {
+            width: 100px;
+            margin: 10px 1px 10px 10px;
+        }
+
+        .result {
+            width: 320px;
+        }
+
+        .selected {
+            background-color: silver;
+        }
+
+        .popup {
+            position: fixed;
+            width: 400px;
+            box-sizing: border-box;
+            min-height: 52px;
+            padding: 10px;
+            background-color: silver;            
+            left: 350px;
+            /*display: none;*/
+            display: block;            
+        }
+
+        #popup1 {            
+            top: 18px;            
+        }        
+
+        #popup2 {            
+            top: 88px;            
+        }       
+
+        #popup3 {            
+            top: 158px;            
+        }       
+
+        #popup4 {            
+            top: 228px;            
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container" id="size">        
+        <div class="choice_size" id="big">Большой бургер</div>
+        <div class="choice_size" id="small">Маленький бургер</div>
+    </div>
+
+    <div class="container" id="stuff">        
+        <div class="choice_stuff" id="cheese">Сыр</div>
+        <div class="choice_stuff" id="salad">Салат</div>
+        <div class="choice_stuff" id="potato">Картофель</div>
+    </div>
+
+    <div class="container" id="topping">        
+        <div class="choice_topping" id="spice">Приправа</div>
+        <div class="choice_topping" id="mayonnaise">Майонез</div>
+    </div>
+
+    <div class="container">                
+        <div class="result" id="result">Посчитать цену и калории</div>
+    </div>
+
+
+    <div class="popup" id="popup1">Основные сведения</div>
+
+    <div class="popup" id="popup2">Начинка</div>
+
+    <div class="popup" id="popup3">Добавки</div>
+
+    <div class="popup" id="popup4">Результат</div>
+
+    
+    <script src="js_pro_lesson2-2.js" type="text/javascript"></script>
+    
+</body>
+</html>
